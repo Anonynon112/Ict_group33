@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Travel Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --primary-color: black;
+      --seconday-color: white;
+      --btn-color: rgb(40, 40, 164);
+    }
+
+    body {
+      background-color: var(--seconday-color);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid black;
+      box-shadow: 0px 0px 3px 0px var(--primary-color);
+    }
+
+    nav h2 a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .right-nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ngr {
+      font-size: 13px;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 130px;
+      height: 40px;
+      background-color: var(--btn-color);
+      color: white;
+      border-radius: 30px;
+      font-size: 13px;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: black;
+    }
+
+    .ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .ul a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .ul a:hover {
+      color: var(--btn-color);
+    }
+
+    .mm {
+      border: 1px solid var(--primary-color);
+      border-radius: 20px;
+      text-align: center;
+      margin: 70px 20px 0px 20px;
+      padding: 20px;
+    }
+
+    .ul2 {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      border-bottom: 1px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+
+    .ul2 a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 13px;
+    }
+
+    .op {
+      color: var(--btn-color);
+      border-bottom: 3px solid var(--btn-color);
+      padding-bottom: 5px;
+    }
+
+    .inp {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1.5px solid var(--primary-color);
+      font-size: 13px;
+      border-radius: 5px;
+    }
+
+    .inn {
+      width: 250px;
+    }
+
+    .inn2, .inn3 {
+      width: 150px;
+    }
+
+    .btn2 {
+      width: 100px;
+      height: 40px;
+      border-radius: 30px;
+      font-size: 13px;
+      border: 1px solid var(--primary-color);
+      background-color: var(--btn-color);
+      color: white;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .ss {
+      margin: 40px 20px;
+      border: 1px solid var(--primary-color);
+      border-radius: 20px;
+      background-color: var(--btn-color);
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn3 {
+      width: 100px;
+      height: 40px;
+      border-radius: 30px;
+      font-size: 13px;
+      border: 1px solid white;
+      background-color: var(--btn-color);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .ul.active {
+        display: flex;
+      }
+
+      .btn {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .ss {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .inp {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .inn, .inn2, .inn3 {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2><a href="index.html">ICT Project.</a></h2>
+    <div class="right-nav">
+      <a href="#" class="ngr"><b>NGR</b></a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <button class="btn">Get The App <i class="fa-solid fa-cloud-arrow-down"></i></button>
+    <ul class="ul" id="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Members</a></li>
+      <li><a href="Supp.html">Support</a></li>
+      <li><a href="Tri.html">Trips</a></li>
+      <li><i class="fa-solid fa-bell"></i></li>
+      <li><a href="sign.html">Sign up</a></li>
+    </ul>
+  </nav>
+
+  <main class="mm">
+    <ul class="ul2">
+      <li><a href="#" class="op">Things to do</a></li>
+      <li><a href="#" class="pi">Flights</a></li>
+      <li><a href="#" class="pi">Cars</a></li>
+      <li><a href="#" class="pi">Packages</a></li>
+      <li><a href="#" class="pi">Hotels</a></li>
+    </ul>
+    <div class="inp">
+      <input type="text" class="inn" value="Things To Do in?" onclick="this.value=''" />
+      <input type="text" class="inn2" value="From:" onclick="this.value=''" />
+      <input type="text" class="inn3" value="To:" onclick="this.value=''" />
+    </div>
+    <button class="btn2">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+  </main>
+
+  <section class="ss">
+    <h2>Join as a premium member, sign up today</h2>
+    <button class="btn3">Sign up</button>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

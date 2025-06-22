@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --seconday-color: white;
+    --primary-color: black;
+    --btn-color: rgb(40, 40, 164);
+
+    /* --seconday-color: rgb(50, 48, 48);
+    --primary-color: white;
+    --btn-color: rgb(40, 40, 164); */
+
+}
+
+body{
+    background-color: var(--seconday-color);
+}
+
+nav{
+    display: flex;
+    gap: 3rem;
+    height: 55px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 3px 0px var(--primary-color);
+    align-items: center;
+
+}
+
+
+nav h2{
+    margin-left: 20px;
+}
+.ji:hover{
+    color: rgb(40, 40, 164);
+}
+.aaa{
+    color: black;
+    text-decoration: none;
+}
+.ji{
+    color: var(--primary-color);
+}
+
+.hh2 a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn{
+    width: 130px;
+    height: 40px;
+    color: var(--primary-color);
+    background-color: var(--seconday-color);
+    border-radius: 30px;
+    font-size: 13px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--seconday-color);
+    margin-left: 320px;     
+    /* gap: 1rem; */
+    /* Moves The other part of the nav with */
+    transition: all ease-in-out 0.3s;
+}
+
+.fa-bell{
+    font-size: 17px;
+    color: var(--primary-color);
+}
+
+.fa-bell:hover{
+    color: var(--btn-color);
+}
+
+
+.btn:hover{
+    background-color: var(--btn-color);
+    color: white;
+}
+
+
+
+.ul{
+    display: flex;
+    gap: 3rem;
+    text-decoration: none;
+    font-size: 13px;
+    list-style: none;
+
+}
+
+.ul a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.ul a:hover{
+    color: var(--btn-color);
+}
+
+main{
+    background-color: skyblue;
+    height: 450px;
+    text-align: center;
+}
+
+main h1{
+    padding-top: 130px;
+    font-size: 24px;
+}
+
+main p{
+    font-size: 13px;
+}
+
+.pp{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pp a{
+    text-decoration: underline;
+    color: black;
+    /* margin-top: 20px; */
+}
+
+.sec1 h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+
+}
+
+
+.cont{
+    margin-top: 30px;
+    display: flex;
+    gap: 7rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont2{
+    margin-top: 30px;
+    display: flex;
+    gap: 7rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont3{
+    margin-top: 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+
+.fa-circle-user{
+    color: skyblue;
+    font-size: 250px;
+}
+
+footer{
+    background-color: skyblue;
+    height: 250px;
+    margin-top: 60px;
+}
+
+.las2{
+    display: flex;
+    gap: 5rem;
+    height: 200px;
+    justify-content: center;
+}
+
+.las ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.las a{
+    text-decoration: none;
+    color: var(--seconday-color);
+    font-size: 12px;
+}
+
+.las a:hover{
+    text-decoration: underline;
+}
+
+.let{
+    margin-top: 30px;
+}
+
+.let h5{
+    font-size: 17px;
+}
+
+.let input{
+    border: 0.5px solid black;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn5{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    /* align-items: center; */
+    /* font-size: 13px; */
+    border: 0.4px solid var(--primary-color);
+
+    background-color: var(--btn-color);
+    color: white;
+    /* margin-left: 30px;  */
+}
+.end{
+    width: 90%;
+    border-top: 1px solid var(--seconday-color);
+    text-align: center;
+    justify-self: center;
+    color: var(--seconday-color);
+    font-size: 9px;
+}

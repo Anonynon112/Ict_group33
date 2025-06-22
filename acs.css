@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.all{
+    position: absolute;
+    border: 1px solid black;
+    width: 40%;
+    height: 65%;
+    left: 30%;
+    top: 20%;
+    background-color: white;
+    box-shadow: 0px 2px 2px 1px;
+    /* border: none */
+}
+
+.p2{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.p{
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgb(40, 40, 164);;
+}
+
+.inp1 input{
+    width: 270px;
+    margin-bottom: 7px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.inp2 input{
+    width: 270px;
+    margin-bottom: 7px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+p{
+    font-size: 10px;
+}
+
+p a{
+    color: rgb(40, 40, 164);;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.inp{
+    margin-top: 65px;
+    margin-left: 23%;
+}
+
+.pp{
+    color: green;
+}
+
+button{
+    width: 270px;
+    height: 30px;
+    border: 0.2px solid black;
+    border-radius: 7px;
+    background-color: rgb(225, 228, 231);
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
